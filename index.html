@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Text Humanizer</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <h2>ToneForge AI: Text Humanizer (Powered by TinyLlama + Ollama)</h2>
+
+  <label for="inputText">Enter robotic or overly formal text:</label>
+  <textarea id="inputText" rows="8" placeholder="e.g. The user interface shall be optimized in accordance with design principles..."></textarea>
+
+  <button onclick="humanizeText()">Humanize</button>
+
+  <h3>Humanized Output:</h3>
+  <textarea id="outputText" rows="10" readonly placeholder="The rephrased, human-friendly text will appear here..."></textarea>
+  <button id="copyBtn" onclick="copyOutput()">Copy Output</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
